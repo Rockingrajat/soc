@@ -10,7 +10,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { XyzComponent } from './xyz/xyz.component';
+import { homedir } from 'os';
+
+const appRoutes: Routes = [
+  {path:'components/dashboard',component: DashboardComponent},
+  {path:'components/home',component:HomeComponent},
+  {path:'components/about',component:AboutComponent}
+];
 
 @NgModule({
   declarations: [
@@ -18,11 +24,11 @@ import { XyzComponent } from './xyz/xyz.component';
     HomeComponent,
     AboutComponent,
     DashboardComponent,
-    XyzComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
