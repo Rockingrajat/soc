@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 
 
@@ -10,9 +10,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { homedir } from 'os';
+import { Route } from '@angular/compiler/src/core';
 
-const appRoutes: Routes = [
+
+const appRoutes: Routes= [
   {path:'components/dashboard',component: DashboardComponent},
   {path:'components/home',component:HomeComponent},
   {path:'components/about',component:AboutComponent}
