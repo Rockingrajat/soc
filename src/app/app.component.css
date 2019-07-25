@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding:0 px;
+    font-family: sans-serif;
+}
+
+a:link,a:visited {
+    text-decoration: none;
+    background-color: green;
+    border :1px solid blue;
+    color:black;
+    display:block;
+    margin-bottom: 1px;
+}
+a:hover,a:active{
+    background-color:red;
+    color:yellow;
+}
+#sidebar {
+    background-color: black;
+    margin-left: 2px;
+    padding:0px;
+    height:100%;
+    width:200px;
+    position:fixed;
+    left:-200px;
+    transition: all 500ms linear;
+}
+#sidebar.active{
+    left:0px;
+}
+
+#sidebar ul li{
+    list-style: none;
+    margin-left:0 px;
+    border-bottom:3px solid rgba(100,100,100,0.3);
+    font-size: 20px;
+    padding:15px 10px;
+    color:white;
+}
+
+.toggle-btn{
+    position: absolute;
+    left:210px;
+    top:10px;
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    background-color:black;
+    height:7px;
+    width:50px;
+    margin: 5px 0px;
+
+}
