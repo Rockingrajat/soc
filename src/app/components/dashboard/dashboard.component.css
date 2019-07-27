@@ -1,0 +1,22 @@
+.Info{
+    width:200px;
+    height:100px;
+    position:relative;
+    left:30%;
+}
+.img-round{
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    float:left;
+    position: relative;
+    top:50%;
+}
+.details{
+    float:right;
+    margin:0px 0px;
+    border:0px;
+    font-size:15px; 
+    position: relative;
+    top:40px;
+}
