@@ -21,10 +21,11 @@
         </p>
         <div id="emptyspace">
         </div>
+        <input type="file" (change)=OnFileSelected($event)/>
         
       </fieldset>
     </form>
-
     <button (click)="post_data(title,content)">POST DATA</button>
+    
   </body>
 </html>

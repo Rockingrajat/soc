@@ -11,5 +11,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
+  RequestSent(){
+    document.getElementById("friendRequest").style.backgroundColor="blue";
+    document.getElementById("friendRequest").innerHTML = "Friend Request Sent";
+  }
 
 }
