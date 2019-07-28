@@ -2,7 +2,7 @@
   <head>
     <meta charset = "UTF-8" />
   </head>
-  <body style="background:url('blog_background.jpg');">
+  <body style="background:url('../assets/image/blog_background.jpg');">
     <form>
       <fieldset>
         <legend >BLOG</legend>
@@ -10,19 +10,21 @@
           <label>Title:</label>
           <input type = "text"
                  id = "myText"
-                 value = "" />
+                 value = "" #title/>
         </p>
         
         <p>
           <label>Content:</label>
-          <textarea id = ""
-                  rows = "3"
-                  cols = "80"></textarea>
+          <input type = "text" name="content"
+         id = "content"
+         #content />
         </p>
         <div id="emptyspace">
         </div>
-        <input type="submit" id="post" value="Post">
+        
       </fieldset>
     </form>
+
+    <button (click)="post_data(title)">POST DATA</button>
   </body>
 </html>
