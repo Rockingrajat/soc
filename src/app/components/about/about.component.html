@@ -15,7 +15,7 @@
         
         <p>
           <label>Content:</label>
-          <input type = "text" name="content"
+          <input type = "text" name="content" value=""
          id = "content"
          #content />
         </p>
@@ -25,6 +25,6 @@
       </fieldset>
     </form>
 
-    <button (click)="post_data(title)">POST DATA</button>
+    <button (click)="post_data(title,content)">POST DATA</button>
   </body>
 </html>

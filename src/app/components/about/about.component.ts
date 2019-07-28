@@ -11,21 +11,22 @@ import { HttpClient,HttpClientModule, HttpHeaders, HttpResponse } from '@angular
   imports:[HttpClientModule,HttpClient],
 })
 export class AboutComponent {
-  public title:any;
-  constructor( http: HttpClient) {
-    this.title="hey!";
+  // public title:any;
+  constructor(private http: HttpClient) {
+    //this.title=title;
   }
-  
-  post_data(title){
-    console.log(this.title);
-  // this.http.post('https://api.moodi.org/user/ctest',this.input,{
-  //   headers: new HttpHeaders({
-  //     'Content-Type': 'application/json'
-  //   }),
-  // })
-  // .subscribe(Response =>
-  //   console.log(Response)
-  //   )
+  _URL ='https://api.moodi.org/ctest/';
+  post_data(title1,content1){
+    console.log(title1.value,content1.value);
+    var input={name:title1.value,number:content1.value};
+  this.http.post('https://api.moodi.org/user/ctest',input,{
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json'
+    }),
+  })
+  .subscribe(Response =>
+    console.log(Response)
+    )
 }
   
 
